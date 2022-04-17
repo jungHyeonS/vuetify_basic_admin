@@ -9,19 +9,25 @@
                 </v-card-text>
                 <v-row class="px-3">
                     <v-col cols="auto">
-                        <v-select
+                        <!-- <v-select
                         :items="items"
                         label="수신상태"
-                        ></v-select>
-                    </v-col>
-                    <v-col cols="auto">
-                        <v-select
+                        ></v-select> -->
+                        <v-combobox
+                        outlined
                         :items="items"
-                        label="추천자"
-                        ></v-select>
+                        label="수신상태"
+                        ></v-combobox>
                     </v-col>
                     <v-col cols="auto">
-                        <v-text-field label="검색 명"></v-text-field>
+                        <v-combobox
+                        outlined
+                        items="items"
+                        label="추천자"
+                        ></v-combobox>
+                    </v-col>
+                    <v-col cols="auto">
+                        <v-text-field label="검색 명" outlined></v-text-field>
                     </v-col>
                     <v-col cols="auto">
                         <v-menu
@@ -41,6 +47,7 @@
                                 readonly
                                 v-bind="attrs"
                                 v-on="on"
+                                outlined
                             ></v-text-field>
                             </template>
                             <v-date-picker
@@ -84,6 +91,7 @@
                                 readonly
                                 v-bind="attrs"
                                 v-on="on"
+                                outlined
                             ></v-text-field>
                             </template>
                             <v-date-picker
@@ -113,6 +121,22 @@
                         <v-btn color="primary">검색</v-btn>
                     </v-col>
                 </v-row>
+                <!-- <v-row>
+                    <v-col cols="12">
+                        <div>
+                            <v-simple-table>
+                                <tr>
+                                    <th>하이</th>
+                                    <td>abc</td>
+                                </tr>
+                                <tr>
+                                    <th>하이하이</th>
+                                    <td>ggg</td>
+                                </tr>
+                            </v-simple-table>
+                        </div>
+                    </v-col>
+                </v-row> -->
                 <!-- <v-row>
                     <v-col cols="12">
                         <v-simple-table>

@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import reuter from "@/pages/reuter.vue"
-import DashBoard from "@/pages/dashboard.vue"
+import forms from "@/pages/forms.vue"
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'DashBoard',
-    component: DashBoard
+    name: 'forms',
+    component: forms
   },
   {
     path: '/reuter',

@@ -62,7 +62,7 @@
             return {
                 drawer:false,
                 items: [
-                { title: 'Dashboard', icon: 'mdi-view-dashboard',to:"/" },
+                { title: 'forms', icon: 'mdi-view-dashboard',to:"/" },
                 { title: 'Reuter', icon: 'mdi-image' ,to:"/reuter"},
                 { title: 'About', icon: 'mdi-help-box' },
                 ],
